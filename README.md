@@ -1,2 +1,2 @@
 # Expansur
-Gestão de relacionamento com o cliente
+Gestão de Relacionamento com o Cliente

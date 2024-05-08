@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Relatórios de Venda">
+    <title>Expansur - Relatório de Venda</title>
+</head>
+<body>
+    <main class="main">
+        <aside class="navigation">
+            <nav class="navigation__menu">
+                <ul class="navigation__list">
+                    <li class="navigation__item">
+                        <a href="index.html" class="navigation__link">Início</a>
+                    </li>
+                    <li class="navigation__item">
+                        <a href="clientes.html" class="navigation__link">Clientes</a>
+                    </li>
+                    <li class="navigation__item">
+                        <a href="funcionarios.html" class="navigation__link">Funcionários</a>
+                    </li>
+                    <li class="navigation__item">
+                        <a href="orcamentos.html" class="navigation__link">Orçamentos</a><br>
+                        <a href="resultado-orcamento.html" class="navigation__link">Resultado orçamento</a>
+                    </li>
+                    <li class="navigation__item">
+                        <a href="relatorio-venda.html" class="navigation__link">Relatório de Venda</a><br>
+                        <a href="resultado-venda.html" class="navigation__link">Resultado de Venda</a>
+                    </li>
+                    <li class="navigation__item">
+                        <a href="pesquisa.html" class="navigation__link">Pesquisa avançada</a>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+        <section class="content content--index">
+            <h1 class="content__title">Relatório de Venda</h1>
+            <p class="content__desc">Apenas usuários admins podem podem selecionar diferentes funcionários para gerar e excluir ou editar.</p>
+            <a href="clientes.html" class="content__back">Voltar</a>
+            <a href="novo-relatorio-venda.html" class="content__new">Novo Relátorio</a>
+            <br><br>
+            <table class="table" border="1">
+                <thead>
+                    <tr class="table__row">
+                        <th class="table__header">#</th>
+                        <th class="table__header">Data inicial</th>
+                        <th class="table__header">Data final</th>
+                        <th class="table__header">Funcionário</th>
+                        <th class="table__header">Valor</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="table__row">
+                        <td class="table__data">1</td>
+                        <td class="table__data">00/00/0000</td>
+                        <td class="table__data">00/00/0000</td>
+                        <td class="table__data">Funcionário 1</td>
+                        <td class="table__data">R$ 500</td>
+                        <td class="table__data">
+                            <button type="button">Editar</button>
+                            <button type="button">Excluir</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>     
+        </section>
+    </main>
+</body>
+</html>

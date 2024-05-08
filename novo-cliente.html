@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Novo Cliente">
+    <title>Expansu - Novo Cliente</title>
+</head>
+<body>
+    <main class="main">
+        <aside class="navigation">
+            <nav class="navigation__menu">
+                <ul class="navigation__list">
+                    <li class="navigation__item">
+                        <a href="index.html" class="navigation__link">Início</a>
+                    </li>
+                    <li class="navigation__item">
+                        <a href="clientes.html" class="navigation__link">Clientes</a>
+                    </li>
+                    <li class="navigation__item">
+                        <a href="funcionarios.html" class="navigation__link">Funcionários</a>
+                    </li>
+                    <li class="navigation__item">
+                        <a href="orcamentos.html" class="navigation__link">Orçamentos</a><br>
+                        <a href="resultado-orcamento.html" class="navigation__link">Resultado orçamento</a>
+                    </li>
+                    <li class="navigation__item">
+                        <a href="relatorio-venda.html" class="navigation__link">Relatório de Venda</a><br>
+                        <a href="resultado-venda.html" class="navigation__link">Resultado de Venda</a>
+                    </li>
+                    <li class="navigation__item">
+                        <a href="pesquisa.html" class="navigation__link">Pesquisa avançada</a>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+        <section class="content">
+            <h1 class="content__title">Novo Cliente</h1>
+            <a href="clientes.html" class="content__back">Voltar</a>
+            <br><br>
+            <form action="resultado-form.html" method="POST" class="form-global">
+                <div class="form-global__field">
+                    <label for="nome" class="form-global__label">Nome completo:</label><br>
+                    <input type="text" id="nome" name="nome" required class="form-global__input">
+                </div><br>
+                <div class="form-global__field">
+                    <label for="endereco" class="form-global__label">Endereço:</label><br>
+                    <input type="text" id="endereco" name="endereco" required class="form-global__input">
+                </div><br>
+                <div class="form-global__field">
+                    <label for="cpf_cnpj" class="form-global__label">CPF ou CNPJ:</label><br>
+                    <input type="text" id="cpf_cnpj" name="cpf_cnpj" required class="form-global__input">
+                </div><br>
+                <div class="form-global__field">
+                    <label for="email" class="form-global__label">E-mail:</label><br>
+                    <input type="email" id="email" name="email" required class="form-global__input">
+                </div><br>
+                <div class="form-global__field">
+                    <label for="data_nascimento" class="form-global__label">Data de Nascimento:</label><br>
+                    <input type="date" id="data_nascimento" name="data_nascimento" class="form-global__input">
+                </div><br>
+                <div class="form-global__field">
+                    <label for="telefone" class="form-global__label">Telefone:</label><br>
+                    <input type="tel" id="telefone" name="telefone" required class="form-global__input">
+                </div><br>
+                <div class="form-global__field">
+                    <button type="submit" class="form-global__button">Cadastrar</button>
+                </div>
+            </form>
+        </section>
+    </main>
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Resultado Relatório de Venda">
+    <title>Expansur - Resultado Relatório de Venda</title>
+</head>
+<body>
+    <main class="main">
+        <aside class="navigation">
+            <nav class="navigation__menu">
+                <ul class="navigation__list">
+                    <li class="navigation__item">
+                        <a href="index.html" class="navigation__link">Início</a>
+                    </li>
+                    <li class="navigation__item">
+                        <a href="clientes.html" class="navigation__link">Clientes</a>
+                    </li>
+                    <li class="navigation__item">
+                        <a href="funcionarios.html" class="navigation__link">Funcionários</a>
+                    </li>
+                    <li class="navigation__item">
+                        <a href="orcamentos.html" class="navigation__link">Orçamentos</a><br>
+                        <a href="resultado-orcamento.html" class="navigation__link">Resultado orçamento</a>
+                    </li>
+                    <li class="navigation__item">
+                        <a href="relatorio-venda.html" class="navigation__link">Relatório de Venda</a><br>
+                        <a href="resultado-venda.html" class="navigation__link">Resultado de Venda</a>
+                    </li>
+                    <li class="navigation__item">
+                        <a href="pesquisa.html" class="navigation__link">Pesquisa avançada</a>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+        <section class="content content--index">
+            <h1 class="content__title">Resultado - Relatório de Venda</h1>
+            <a href="relatorio-venda.html" class="content__back">Voltar</a><br><br>
+            <div class="content__archives-infos">
+                <div class="content__download">
+                    <button type="button">Download PDF</button>
+                    <button type="button">Download CSV</button>
+                </div><br>
+                <hr>
+                <div class="content__send">
+                    <h3>Enviar por e-mail</h3>
+                    <form action="resultado-form.html" method="POST" class="form-global">
+                        <div class="form-global__field">
+                            <label for="email" class="form-global__label">E-mail</label><br>
+                            <input type="email" id="email" name="email" required class="form-global__input">
+                        </div><br>
+                        <div class="form-global__field">
+                            <button type="submit" class="form-global__button">Enviar</button>
+                        </div>
+                    </form>
+                </div>
+            </div><br>
+            <hr>
+            <table class="table" border="1">
+                <thead>
+                    <tr class="table__row">
+                        <th class="table__header">#</th>
+                        <th class="table__header">Data</th>
+                        <th class="table__header">Funcionário</th>
+                        <th class="table__header">Valor total</th>
+                        <th class="table__header">Total de vendas</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="table__row">
+                        <td class="table__data">1</td>
+                        <td class="table__data">00/00/0000</td>
+                        <td class="table__data">Funcionário 1</td>
+                        <td class="table__data">R$ 5.000.00</td>
+                        <td class="table__data">3</td>
+                    </tr>
+                    <tr class="table__row">
+                        <td class="table__data">1</td>
+                        <td class="table__data">00/00/0000</td>
+                        <td class="table__data">Funcionário 1</td>
+                        <td class="table__data">R$ 7.000.00</td>
+                        <td class="table__data">4</td>
+                    </tr>
+                </tbody>
+            </table>    
+        </section>
+    </main>
+</body>
+</html>

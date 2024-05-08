@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Gerar Novo Relatórios de Venda">
+    <title>Expansur - Novo Relatório de Venda</title>
+</head>
+<body>
+    <main class="main">
+        <aside class="navigation">
+            <nav class="navigation__menu">
+                <ul class="navigation__list">
+                    <li class="navigation__item">
+                        <a href="index.html" class="navigation__link">Início</a>
+                    </li>
+                    <li class="navigation__item">
+                        <a href="clientes.html" class="navigation__link">Clientes</a>
+                    </li>
+                    <li class="navigation__item">
+                        <a href="funcionarios.html" class="navigation__link">Funcionários</a>
+                    </li>
+                    <li class="navigation__item">
+                        <a href="orcamentos.html" class="navigation__link">Orçamentos</a><br>
+                        <a href="resultado-orcamento.html" class="navigation__link">Resultado orçamento</a>
+                    </li>
+                    <li class="navigation__item">
+                        <a href="relatorio-venda.html" class="navigation__link">Relatório de Venda</a><br>
+                        <a href="resultado-venda.html" class="navigation__link">Resultado de Venda</a>
+                    </li>
+                    <li class="navigation__item">
+                        <a href="pesquisa.html" class="navigation__link">Pesquisa avançada</a>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+        <section class="content content--index">
+            <h1 class="content__title">Novo - Relatório de Venda</h1>
+            <p class="content__desc">Refine o relátorio com base nos dados dos campos abaixo.</p>
+            <a href="relatorio-venda.html" class="content__back">Voltar</a>
+            <br><br>
+            <form action="resultado-form.html" method="POST" class="form-global">
+                <div class="form-global__field">
+                    <label for="data" class="form-global__label">Data inicial:</label><br>
+                    <input type="date" id="data" name="data" class="form-global__input">
+                </div><br>
+                <div class="form-global__field">
+                    <label for="data-final" class="form-global__label">Data final:</label><br>
+                    <input type="date" id="data-final" name="data-final" class="form-global__input">
+                </div><br>
+                <div class="form-global__field">
+                    <label for="funcionario">Funcionário:</label><br>
+                    <select name="funcionario" id="funcionario">
+                        <option value="funcionario1">Funcionário 1</option>
+                        <option value="funcionario2">Funcionário 2</option>
+                        <option value="funcionario3">Funcionário 3</option>
+                    </select>
+                </div><br>
+                <div class="form-global__field">
+                    <label for="valor" class="form-global__label">Valor R$:</label><br>
+                    <input type="text" id="valor" name="valor" class="form-global__input">
+                </div><br>
+                <div class="form-global__field">
+                    <button type="submit" class="form-global__button">Gerar</button>
+                </div>
+            </form>            
+        </section>
+    </main>
+</body>
+</html>

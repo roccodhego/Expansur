@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Novo Orçamento">
+    <title>Expansu - Novo Orçamento</title>
+</head>
+<body>
+    <main class="main">
+        <aside class="navigation">
+            <nav class="navigation__menu">
+                <ul class="navigation__list">
+                    <li class="navigation__item">
+                        <a href="index.html" class="navigation__link">Início</a>
+                    </li>
+                    <li class="navigation__item">
+                        <a href="clientes.html" class="navigation__link">Clientes</a>
+                    </li>
+                    <li class="navigation__item">
+                        <a href="funcionarios.html" class="navigation__link">Funcionários</a>
+                    </li>
+                    <li class="navigation__item">
+                        <a href="orcamentos.html" class="navigation__link">Orçamentos</a><br>
+                        <a href="resultado-orcamento.html" class="navigation__link">Resultado orçamento</a>
+                    </li>
+                    <li class="navigation__item">
+                        <a href="relatorio-venda.html" class="navigation__link">Relatório de Venda</a><br>
+                        <a href="resultado-venda.html" class="navigation__link">Resultado de Venda</a>
+                    </li>
+                    <li class="navigation__item">
+                        <a href="pesquisa.html" class="navigation__link">Pesquisa avançada</a>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+        <section class="content">
+            <h1 class="content__title">Novo Orçamento</h1>
+            <a href="orcamentos.html" class="content__back">Voltar</a>
+            <br><br>
+            <form action="submit-your-form-handler" method="POST" enctype="multipart/form-data" class="form-global">
+                <div class="form-global__field">
+                    <label for="descricao" class="form-global__label">Descrição:</label><br>
+                    <textarea  id="descricao" name="descricao" required class="form-global__input"></textarea>
+                </div><br>
+                <div class="form-global__field">
+                    <label for="funcionario">Cliente:</label><br>
+                    <select name="funcionario" id="funcionario">
+                        <option value="funcionario1">Cliente 1</option>
+                        <option value="funcionario2">Cliente 2</option>
+                        <option value="funcionario3">Cliente 3</option>
+                    </select>
+                </div><br>
+                <fieldset class="form-global__field">
+                    <legend>Planos</legend>
+                
+                    <label for="fibra">Fibra óptica :</label>
+                    <input type="radio" id="fibra" name="tipo-conexao" value="fibra-optica ">
+
+                    <label for="tipo-radio">Via-rádio :</label>
+                    <input type="radio" id="tipo-radio" name="tipo-conexao" value="via-radio">
+
+                </fieldset><br>
+                <fieldset class="form-global__field">
+                    <legend>Equipamentos</legend>
+                
+                    <label for="servidores">Servidores:</label>
+                    <input type="checkbox" id="servidores" name="servidores" value="servidores">
+
+                    <label for="modems">Modems:</label>
+                    <input type="checkbox" id="modems" name="modems" value="modems">
+
+                    <label for="roteadores">Roteadores:</label>
+                    <input type="checkbox" id="roteadores" name="roteadores" value="roteadores">
+
+                    <label for="switches">Switches:</label>
+                    <input type="checkbox" id="switches" name="switches" value="switches">
+
+                    <label for="cabos">Cabos:</label>
+                    <input type="checkbox" id="cabos" name="cabos" value="cabos">
+
+                    <label for="racks">Racks:</label>
+                    <input type="checkbox" id="racks" name="racks" value="racks">
+                </fieldset><br>
+                <div class="form-global__field">
+                    <label for="valor" class="form-global__label">Valores R$:</label><br>
+                    <input type="text" id="valor" name="valor" required class="form-global__input">
+                </div><br>
+                <div class="form-global__field">
+                    <button type="submit" class="form-global__button">Enviar</button>
+                </div>
+            </form>            
+        </section>
+    </main>
+</body>
+</html>
